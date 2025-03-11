@@ -6,6 +6,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.List;
+
 
 @Data
 @AllArgsConstructor
@@ -25,5 +27,8 @@ public class LibraryStaff {
     private Long staffMemberContactNumber;
     @Column(name = "password")
     private String staffMemberPassword;
+
+    @OneToMany
+    private List<LibraryTransaction> transactions;
 
 }

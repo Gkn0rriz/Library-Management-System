@@ -6,6 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.util.Date;
+import java.util.List;
 
 @Data
 @AllArgsConstructor
@@ -18,17 +19,25 @@ public class Book {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long bookId;
 
-    @Column(name = "book_title")
     private String bookName;
-    @Column(name = "book_author")
+
     private String bookAuthor;
-    @Column(name = "book_isbn")
+
     private Long bookISBN;
-    @Column(name = "book_genre")
+
     private String bookGenre;
-    @Column(name = "book_publication_year")
+
     @Temporal(TemporalType.DATE)
     private Date bookPublicationYear;
-    @Column(name = "book_availabily_status")
+
     private Boolean bookAvailabilityStatus;
+
+    @OneToOne
+    private Inventory inventory;
+
+    @OneToMany
+    private List<LibraryTransaction> libraryTransactions;
+
+    @OneToMany
+    private List<Reservation> reservations;
 }

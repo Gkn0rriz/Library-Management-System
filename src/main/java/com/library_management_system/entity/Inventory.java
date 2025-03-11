@@ -15,9 +15,8 @@ import java.util.Date;
 public class Inventory {
 
     @Id
-    @Column(name = "book_id")
-//    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long bookId;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
 
     @Column(name = "quantity_available",columnDefinition = "INT default 0")
     private int quantityAvailable;
@@ -30,6 +29,11 @@ public class Inventory {
     private Double inventoryCost;
     @Column(name = "inventory_condition")
     private String condition;
+
+    @OneToOne
+    private Book book;
+
+
 
 
 }

@@ -15,12 +15,17 @@ public class Fine {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private Long fineId;
-    @Column(name = "user_id")
+
     private Long userId;
     @Column(name = "amount",columnDefinition = "double default 0")
     private Double fineAmount;
+
     @Column(name = "reason")
     private String fineReason;
+
     @Column(name = "status",columnDefinition = "varchar(255) default 'paid'")
     private String paymentStatus;
+
+    @ManyToOne
+    private Member member;
 }

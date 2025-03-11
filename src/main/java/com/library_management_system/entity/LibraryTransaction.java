@@ -13,21 +13,24 @@ import java.time.LocalDate;
 @Entity
 @Table(name="lab_ms_transactions")
 public class LibraryTransaction {
+
     @Id
-    @Column(name = "transaction_id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long transactionID;
-    @Column(name = "book_id")
+
     private Long bookID;
-    @Column(name = "user_id")
     private Long userID;
-
-    @Column(name = "checkout_date")
     private LocalDate checkoutDate;
-
-    @Column(name = "return_date")
     private LocalDate returnDate;
-    @Column(name = "fine_amount",columnDefinition = "double default 0")
     private Double fineAmount;
+
+    @ManyToOne
+    private Book book;
+
+    @ManyToOne
+    private Member member;
+
+    @ManyToOne
+    private LibraryStaff staff;
 
 }

@@ -5,16 +5,19 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.List;
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
 @Table(name = "lab_ms_members")
 public class Member {
+
     @Id
-    @Column(name="member_id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long memberID;
+
     @Column(name="name")
     private String memberName;
     @Column(name="address")
@@ -30,4 +33,10 @@ public class Member {
 
     @Column(name = "pssword")
     private String password;
+
+    @OneToMany
+    private List<LibraryTransaction> libraryTransactions;
+
+    @OneToMany
+    private List<Fine> fines;
 }
