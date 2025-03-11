@@ -1,10 +1,10 @@
 package com.library_management_system.entity;
 
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.*;
 import java.util.Date;
 
 @Data
@@ -18,6 +18,7 @@ public class Inventory {
     @Column(name = "book_id")
 //    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long bookId;
+
     @Column(name = "quantity_available",columnDefinition = "INT default 0")
     private int quantityAvailable;
     @Column(name = "shelf_location")
