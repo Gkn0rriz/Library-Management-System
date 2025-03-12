@@ -34,8 +34,8 @@ public class BookService {
         return bookRepository.findByBookName(title);
     }
 
-    public Page<Book> fetchBookByAuthor(String author){
-        return bookRepository.findByBookAuthor(author);
+    public Page<Book> fetchBookByAuthor(String author, Pageable pageable){
+        return bookRepository.findByBookAuthor(author, pageable);
     }
 
     public Boolean checkBookAvailability(Long id){
