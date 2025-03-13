@@ -18,16 +18,18 @@ public class Inventory {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "quantity_available",columnDefinition = "INT default 0")
+    @Column(columnDefinition = "INT default 0")
     private int quantityAvailable;
-    @Column(name = "shelf_location")
+
     private String shelfLocation;
-    @Column(name = "acquisition_date")
+
     @Temporal(TemporalType.DATE)
     private Date acquisitionDate;
-    @Column(name = "total_cost",columnDefinition = "double default 0")
+
+    @Column(columnDefinition = "double default 0")
     private Double inventoryCost;
-    @Column(name = "inventory_condition")
+
+
     private String condition;
 
     @OneToOne

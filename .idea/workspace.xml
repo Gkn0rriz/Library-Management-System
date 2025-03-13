@@ -5,51 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4f5792bf-115a-4c3d-95aa-a8a39bc4c96b" name="Changes" comment="Na">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/library_management_system/controller/book_controller/AddBookController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/library_management_system/controller/book_controller/BookAvailabilityController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/library_management_system/controller/book_controller/DeleteBookController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/library_management_system/controller/book_controller/GetAllBooksController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/library_management_system/controller/book_controller/GetBookByBookIdController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/library_management_system/controller/book_controller/SearchBookByAuthorController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/library_management_system/controller/book_controller/SearchBookByTitleController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/library_management_system/controller/book_controller/UpdateBookController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/library_management_system/controller/fineController/GetAllFinesController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/library_management_system/controller/fineController/GetFineByIdController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/library_management_system/controller/fineController/GetFinesByUserIdController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/library_management_system/controller/fineController/PayFineController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/library_management_system/controller/inventory_controller/AddInventoryEntryController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/library_management_system/controller/inventory_controller/DeleteInventoryEntryController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/library_management_system/controller/inventory_controller/GetAllInventoryController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/library_management_system/controller/inventory_controller/GetInventoryByIdController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/library_management_system/controller/inventory_controller/UpdateInventoryController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/library_management_system/controller/library_branch_controller/AddLibraryBranchController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/library_management_system/controller/library_branch_controller/DeleteLibraryBranchController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/library_management_system/controller/library_branch_controller/GetAllLibraryBranchesController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/library_management_system/controller/library_branch_controller/GetLibraryBranchByIdController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/library_management_system/controller/library_branch_controller/UpdateLibraryBranchController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/library_management_system/controller/library_staff_controller/AddLibraryStaffController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/library_management_system/controller/library_staff_controller/DeleteLibraryStaffController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/library_management_system/controller/library_staff_controller/GetAllLibraryStaffController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/library_management_system/controller/library_staff_controller/GetLibraryStaffByIdController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/library_management_system/controller/library_staff_controller/SearchLibraryStaffByNameController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/library_management_system/controller/library_staff_controller/UpdateLibraryStaffController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/library_management_system/controller/library_transaction_controller/CalculateFineController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/library_management_system/controller/library_transaction_controller/CheckoutBookController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/library_management_system/controller/library_transaction_controller/GetAllTransactionsController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/library_management_system/controller/library_transaction_controller/GetTransactionByIdController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/library_management_system/controller/library_transaction_controller/GetTransactionsByUserIdController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/library_management_system/controller/library_transaction_controller/ReturnBookController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/library_management_system/controller/member_controller/AddMemberController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/library_management_system/controller/member_controller/DeleteMemberController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/library_management_system/controller/member_controller/GetAllMembersController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/library_management_system/controller/member_controller/GetMemberByIDController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/library_management_system/controller/member_controller/SearchMemberByNameController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/library_management_system/controller/member_controller/UpdateMemberController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/library_management_system/controller/reservation_controller/CancelReservationController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/library_management_system/controller/reservation_controller/GetAllReservationController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/library_management_system/controller/reservation_controller/GetReservationByIdController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/library_management_system/controller/reservation_controller/GetReservationsByUserIdController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/library_management_system/controller/reservation_controller/PlaceReservationController.java" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/library_management_system/service/MemberService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/library_management_system/entity/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/library_management_system/entity/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/library_management_system/entity/Inventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/library_management_system/entity/Inventory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/library_management_system/entity/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/library_management_system/entity/Member.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/library_management_system/repository/MemberRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/library_management_system/repository/MemberRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -301,7 +262,7 @@
       <workItem from="1703185079766" duration="428000" />
       <workItem from="1703186959785" duration="1194000" />
       <workItem from="1703871862151" duration="640000" />
-      <workItem from="1741796802267" duration="3761000" />
+      <workItem from="1741796802267" duration="6308000" />
     </task>
     <task id="LOCAL-00059" summary="Get All Member Controller">
       <option name="closed" value="true" />

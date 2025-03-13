@@ -32,9 +32,6 @@ public class Book {
 
     private Boolean bookAvailabilityStatus;
 
-    @OneToOne
-    private Inventory inventory;
-
     @OneToMany
     private List<LibraryTransaction> libraryTransactions;
 
