@@ -15,16 +15,20 @@ import java.util.List;
 @Entity
 @Table(name = "lab_ms_staffs")
 public class LibraryStaff {
+
     @Id
-    @Column(name = "staff_id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long staffMemberID;
+    private Long id;
+
     @Column(name = "name")
     private String staffMemberName;
+
     @Column(name = "position")
     private String staffMemberPosition;
+
     @Column(name = "contact_number")
     private Long staffMemberContactNumber;
+
     @Column(name = "password")
     private String staffMemberPassword;
 

@@ -38,8 +38,8 @@ public class BookController {
         return ResponseEntity.ok(bookService.fetchBookById(id));
     }
 
-    @GetMapping("/findByAuthor/{author}")
-    public ResponseEntity<Page<Book>> getBookByAuthor(@PathVariable String author,
+    @GetMapping("/findByAuthor")
+    public ResponseEntity<Page<Book>> getBookByAuthor(@RequestParam String author,
                                                       @RequestParam(defaultValue = "0") int page,
                                                       @RequestParam(defaultValue = "10") int size,
                                                       @RequestParam(defaultValue = "book_name") String sortBy,
@@ -53,8 +53,8 @@ public class BookController {
 
     }
 
-    @GetMapping("/findByTitle/{title}")
-    public ResponseEntity<List<Book>> getBookByTitle(@PathVariable String title){
+    @GetMapping("/findByTitle")
+    public ResponseEntity<List<Book>> getBookByTitle(@RequestParam String title){
         return ResponseEntity.ok(bookService.fetchBookByTitle(title));
     }
 
@@ -73,20 +73,14 @@ public class BookController {
                 .body(bookService.updateBook(id, book));
     }
 
-    //commented the code until I build security features
-//    @DeleteMapping("/deleteBook/{id}")
-//    public ResponseEntity<String> deleteBook(@PathVariable Long id){
-//
-//        try {
-//            bookService.deleteBook(id);
-//            return ResponseEntity.ok("Book with id " + id + " was deleted successfully");
-//
-//        }catch (EntityNotFoundException e){
-//            return ResponseEntity
-//                    .status(HttpStatus.NOT_FOUND)
-//                    .body(e.getMessage());
-//        }
-//    }
+
+    @DeleteMapping("/deleteBook/{id}")
+    public ResponseEntity<String> deleteBook(@PathVariable Long id){
+
+        bookService.deleteBookById(id);
+        return ResponseEntity.ok("Book with id " + id + " was deleted successfully");
+
+    }
 
 
 }

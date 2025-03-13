@@ -41,8 +41,8 @@ public class MemberController {
         return ResponseEntity.ok(memberService.getMemberById(id));
     }
 
-    @GetMapping("/searchByName/{name}")
-    public ResponseEntity<Member> getMemberByName(@PathVariable String name){
+    @GetMapping("/searchByName")
+    public ResponseEntity<Member> getMemberByName(@RequestParam String name){
 
         return ResponseEntity.ok(memberService.getMemberByName(name));
     }

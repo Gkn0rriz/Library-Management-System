@@ -27,7 +27,8 @@ public class BookService {
     }
 
     public Book fetchBookById(Long id){
-        return bookRepository.findById(id).orElseThrow(() -> new EntityNotFoundException("Book not found"));
+        return bookRepository.findById(id).orElseThrow(() ->
+                new EntityNotFoundException("Book with id " + id + " was not found"));
     }
 
     public List<Book> fetchBookByTitle(String title ){
@@ -48,7 +49,7 @@ public class BookService {
 
     public Book updateBook(Long id, Book book){
         Book existingBook = bookRepository.findById(id).orElseThrow(()
-                -> new EntityNotFoundException("Book not found"));
+                -> new EntityNotFoundException("Book with id " + id + " was not found"));
 
         modelMapper.map(book,existingBook);
 
@@ -60,7 +61,7 @@ public class BookService {
     public void deleteBookById(Long id){
 
         if (!bookRepository.existsById(id))
-            throw new EntityNotFoundException("Book not found");
+            throw new EntityNotFoundException("Book with id " + id + " was not found");
 
         bookRepository.deleteById(id);
     }
