@@ -11,12 +11,11 @@ import lombok.NoArgsConstructor;
 @Entity
 @Table(name = "lab_ms_fines")
 public class Fine {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id")
-    private Long fineId;
+    private Long id;
 
-    private Long userId;
     @Column(name = "amount",columnDefinition = "double default 0")
     private Double fineAmount;
 
@@ -29,4 +28,10 @@ public class Fine {
     @ManyToOne
     @JoinColumn (name = "member_id", nullable = false)
     private Member member;
+
+    public Fine (Double fineAmount, String fineReason, String paymentStatus){
+        this.fineAmount = fineAmount;
+        this.fineReason = fineReason;
+        this.paymentStatus = paymentStatus;
+    }
 }
