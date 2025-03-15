@@ -17,7 +17,7 @@ public class Book {
     @Id
     @Column(name="book_id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long bookId;
+    private Long id;
 
     private String bookName;
 
@@ -32,9 +32,9 @@ public class Book {
 
     private Boolean bookAvailabilityStatus;
 
-    @OneToMany
+    @OneToMany (mappedBy = "book", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<LibraryTransaction> libraryTransactions;
 
-    @OneToMany
+    @OneToMany (mappedBy = "book", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Reservation> reservations;
 }

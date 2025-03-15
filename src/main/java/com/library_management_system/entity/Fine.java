@@ -27,5 +27,6 @@ public class Fine {
     private String paymentStatus;
 
     @ManyToOne
+    @JoinColumn (name = "member_id", nullable = false)
     private Member member;
 }

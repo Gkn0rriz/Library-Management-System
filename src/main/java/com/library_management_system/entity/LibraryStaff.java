@@ -32,7 +32,7 @@ public class LibraryStaff {
     @Column(name = "password")
     private String staffMemberPassword;
 
-    @OneToMany
+    @OneToMany (mappedBy = "staff", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<LibraryTransaction> transactions;
 
 }

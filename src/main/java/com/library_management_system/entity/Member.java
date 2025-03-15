@@ -26,9 +26,9 @@ public class Member {
     private int booksBorrowed;
     private String password;
 
-    @OneToMany
+    @OneToMany(mappedBy = "member", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<LibraryTransaction> libraryTransactions;
 
-    @OneToMany
+    @OneToMany (mappedBy = "member", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Fine> fines;
 }

@@ -16,21 +16,24 @@ public class LibraryTransaction {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long transactionID;
+    private Long id;
 
-    private Long bookID;
-    private Long userID;
+    @ManyToOne
+    @JoinColumn(name = "book_id", nullable = false)
+    private Book book;
+
+    @ManyToOne
+    @JoinColumn(name = "member_id")
+    private Member member;
+
     private LocalDate checkoutDate;
     private LocalDate returnDate;
     private Double fineAmount;
 
-    @ManyToOne
-    private Book book;
+
 
     @ManyToOne
-    private Member member;
-
-    @ManyToOne
+    @JoinColumn (name = "transaction_id", nullable = false)
     private LibraryStaff staff;
 
 }
