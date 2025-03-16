@@ -30,7 +30,7 @@ public class LibraryTransaction {
 
 
     @ManyToOne
-    @JoinColumn (name = "transaction_id", nullable = false)
+    @JoinColumn (name = "staff_id", nullable = false)
     private LibraryStaff staff;
 
     public LibraryTransaction(LocalDate checkoutDate, LocalDate returnDate) {

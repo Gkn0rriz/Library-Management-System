@@ -16,7 +16,7 @@ public class Member {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long memberID;
+    private Long id;
 
     private String name;
     private String address;
@@ -31,4 +31,7 @@ public class Member {
 
     @OneToMany (mappedBy = "member", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Fine> fines;
+
+    @OneToMany (mappedBy = "member", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<Reservation> reservations;
 }

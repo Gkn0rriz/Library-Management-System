@@ -32,6 +32,9 @@ public class Book {
 
     private Boolean bookAvailabilityStatus;
 
+    @OneToOne (mappedBy = "book")
+    private Inventory inventory;
+
     @OneToMany (mappedBy = "book", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<LibraryTransaction> libraryTransactions;
 

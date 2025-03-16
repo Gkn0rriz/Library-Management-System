@@ -14,14 +14,20 @@ import java.time.LocalDate;
 @Table(name = "lab_ms_reservations")
 public class Reservation {
 
+    public final static String RESERVED = "reserved";
+
+    public final static String FREE = "free";
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long reservationId;
+    private Long id;
 
-    private Long userId;
-    private Long bookId;
     private LocalDate reservationDate;
     private String reservationStatus;
+
+    @ManyToOne
+    @JoinColumn (name = "member_id", nullable = false)
+    private Member member;
 
     @ManyToOne
     @JoinColumn (name = "book_id", nullable = false)

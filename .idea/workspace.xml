@@ -4,13 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f5792bf-115a-4c3d-95aa-a8a39bc4c96b" name="Changes" comment="Na">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/library_management_system/controller/LibraryStaffController.java" afterDir="false" />
+    <list default="true" id="4f5792bf-115a-4c3d-95aa-a8a39bc4c96b" name="Changes" comment="Added the controller layer for the LibraryStaff and also made some small tweaks to the other controllers">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/library_management_system/controller/FineController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/library_management_system/service/FineService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/library_management_system/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/library_management_system/controller/BookController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/library_management_system/entity/LibraryStaff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/library_management_system/entity/LibraryStaff.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/library_management_system/repository/LibraryStaffRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/library_management_system/repository/LibraryStaffRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/library_management_system/service/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/library_management_system/service/BookService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/library_management_system/entity/Fine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/library_management_system/entity/Fine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/library_management_system/entity/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/library_management_system/entity/Member.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/library_management_system/repository/FineRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/library_management_system/repository/FineRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/MainProjectApplicationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/MainProjectApplicationTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +123,7 @@
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_directory_selection&quot;: &quot;V:/AllProjects/src/main/java/com/library_management_system/controller/book&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/usr/IdeaProjects/Library-Management-System&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/usr/IdeaProjects/The Corner Store&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -264,15 +265,9 @@
       <workItem from="1703871862151" duration="640000" />
       <workItem from="1741796802267" duration="6308000" />
       <workItem from="1741856331454" duration="6242000" />
-      <workItem from="1741883262728" duration="1490000" />
-    </task>
-    <task id="LOCAL-00059" summary="Get All Member Controller">
-      <option name="closed" value="true" />
-      <created>1702834275256</created>
-      <option name="number" value="00059" />
-      <option name="presentableId" value="LOCAL-00059" />
-      <option name="project" value="LOCAL" />
-      <updated>1702834275256</updated>
+      <workItem from="1741883262728" duration="3441000" />
+      <workItem from="1742033592416" duration="12179000" />
+      <workItem from="1742057061669" duration="711000" />
     </task>
     <task id="LOCAL-00060" summary="Get Member By ID Controller">
       <option name="closed" value="true" />
@@ -658,7 +653,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703872178116</updated>
     </task>
-    <option name="localTasksCounter" value="108" />
+    <task id="LOCAL-00108" summary="Added the controller layer for the LibraryStaff and also made some small tweaks to the other controllers">
+      <option name="closed" value="true" />
+      <created>1741884925130</created>
+      <option name="number" value="00108" />
+      <option name="presentableId" value="LOCAL-00108" />
+      <option name="project" value="LOCAL" />
+      <updated>1741884925130</updated>
+    </task>
+    <option name="localTasksCounter" value="109" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -709,7 +712,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Delete Book Service" />
     <MESSAGE value="Get All Book Service" />
     <MESSAGE value="Get Book By ID Service" />
     <MESSAGE value="Search Book By Author Service" />
@@ -734,7 +736,8 @@
     <MESSAGE value="README.md" />
     <MESSAGE value="class files" />
     <MESSAGE value="Na" />
-    <option name="LAST_COMMIT_MESSAGE" value="Na" />
+    <MESSAGE value="Added the controller layer for the LibraryStaff and also made some small tweaks to the other controllers" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added the controller layer for the LibraryStaff and also made some small tweaks to the other controllers" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

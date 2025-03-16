@@ -29,10 +29,10 @@ public class Inventory {
     @Column(columnDefinition = "double default 0")
     private Double inventoryCost;
 
-
     private String condition;
 
     @OneToOne
+    @Column(unique = true)
     private Book book;
 
 
